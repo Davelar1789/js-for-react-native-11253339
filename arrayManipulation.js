@@ -8,8 +8,23 @@ function processArray(arr) {
     });
 }
 
+function formatArrayStrings(strings, numbers) {
+    return strings.map((str, index) => {
+        if (numbers[index] % 2 === 0) {
+            return str.toUpperCase();
+        } else {
+            return str.toLowerCase();
+        }
+    });
+}
+
+// Example usage:
 const inputArray = [1, 2, 3, 4, 5];
 const processedArray = processArray(inputArray);
 console.log(processedArray);
 
-module.exports = { processArray };
+const stringArray = ['I', 'love', 'Programming', 'In', 'Java'];
+const formattedStrings = formatArrayStrings(stringArray, processedArray);
+console.log(formattedStrings);
+
+module.exports = { processArray, formatArrayStrings };
