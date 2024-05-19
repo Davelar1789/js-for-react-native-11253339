@@ -18,13 +18,4 @@ function formatArrayStrings(strings, numbers) {
     });
 }
 
-// Example usage:
-const inputArray = [1, 2, 3, 4, 5];
-const processedArray = processArray(inputArray);
-console.log(processedArray);
-
-const stringArray = ['I', 'love', 'Programming', 'In', 'Java'];
-const formattedStrings = formatArrayStrings(stringArray, processedArray);
-console.log(formattedStrings);
-
 module.exports = { processArray, formatArrayStrings };
